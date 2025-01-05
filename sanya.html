@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Готическая Мода 2024</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Фон с мрачной атмосферой и текстурами */
+        body {
+            background: 
+                url('https://example.com/chain-background.jpg') no-repeat center center fixed,  /* Цепи */
+                url('https://example.com/spiderweb-background.png') no-repeat center center fixed, /* Паутина */
+                url('https://example.com/dark-texture.jpg') no-repeat center center fixed;  /* Мрачная текстура */
+            background-size: cover;
+            background-blend-mode: overlay;  /* Смешивание слоев */
+            font-family: 'Georgia', serif;
+            color: white;
+        }
+
+        .hover-scale:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+
+        .hover-opacity:hover {
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .slide-up {
+            transform: translateY(20px);
+            opacity: 0;
+            animation: slideUp 0.8s forwards;
+        }
+
+        @keyframes slideUp {
+            0% {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .bg-dark-overlay {
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .text-muted {
+            color: #999;
+        }
+
+        .text-dramatic {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .btn-dark {
+            background-color: #b30000;
+            color: white;
+            border: 2px solid #990000;
+        }
+
+        .btn-dark:hover {
+            background-color: #990000;
+            border: 2px solid #660000;
+        }
+
+        .shadow-dark {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Навигационная панель -->
+    <header class="bg-dark-overlay text-white p-6 shadow-dark">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <h1 class="text-2xl sm:text-4xl font-extrabold text-red-600 text-dramatic">Gothic</h1>
+            <nav>
+                <a href="sanya.html">Главная</a>
+                <a href="trends.html">Тренды</a>
+                <a href="about.html">О нас</a>
+                <a href="contact.html">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Главная секция -->
+    <section id="home" class="bg-gradient-to-r from-black to-gray-800 text-white py-36 text-center fade-in">
+        <div class="max-w-7xl mx-auto w-full">
+            <h2 class="text-3xl sm:text-5xl font-extrabold mb-6 text-dramatic">Готическая мода 2024 года</h2>
+            <p class="text-lg mb-8 text-muted">Исследуйте мир темных силуэтов, разрушенных форм и мистических материалов. Мода
+                этого года — это не просто одежда, это искусство.</p>
+            <a href="#trends" class="btn-dark px-8 py-4 rounded-full text-lg font-bold hover:bg-red-800 transition">Откройте
+                тренды</a>
+        </div>
+    </section>
+
+    <!-- Тренды 2024 -->
+    <section id="trends" class="py-16 bg-gray-900 text-center fade-in">
+        <div class="max-w-7xl mx-auto w-full">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-red-600 mb-8">Тренды готической моды 2024</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
+                <div class="bg-gray-800 p-6 rounded-lg shadow-dark hover-scale">
+                    <h3 class="text-xl font-semibold mb-2">Темные силуэты</h3>
+                    <p>2024 год будет акцентировать внимание на мощных, скульптурных силуэтах, которые создают драматический
+                        эффект. Черные и насыщенные темные оттенки будут на пике популярности.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-dark hover-scale">
+                    <h3 class="text-xl font-semibold mb-2">Оккультизм и мистицизм</h3>
+                    <p>Символы, связанные с оккультизмом, мистицизмом и древними религиями, будут активно использоваться в
+                        готической моде 2024 года, создавая таинственные и загадочные образы.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-dark hover-scale">
+                    <h3 class="text-xl font-semibold mb-2">Панк-готига</h3>
+                    <p>Слияние панк-культуры с готической эстетикой приводит к созданию ярких, контрастных образов, где
+                        присутствуют металлические детали, цепи и яркие акценты.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Бренды -->
+    <section id="brands" class="bg-black py-16 text-center fade-in">
+        <div class="max-w-7xl mx-auto w-full">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-red-600 mb-8">Бренды готической моды 2024</h2>
+            <p class="text-lg mb-8 text-muted">Среди самых популярных брендов готической моды 2024 можно выделить:</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <div class="bg-gray-800 p-6 rounded-lg shadow-dark hover-opacity">
+                    <h3 class="text-xl font-semibold">Balenciaga</h3>
+                    <p>Этим брендом правят минимализм и эксцентричность. В 2024 году Balenciaga продолжает удивлять сочетанием
+                        готических элементов и футуристичного подхода.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-dark hover-opacity">
+                    <h3 class="text-xl font-semibold">Rick Owens</h3>
+                    <p>Известный своей необычной эстетикой, Rick Owens в 2024 году продолжит использовать дистопические
+                        элементы в своих коллекциях, создавая визуально мощные образы.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-dark hover-opacity">
+                    <h3 class="text-xl font-semibold">Vetements</h3>
+                    <p>Один из лидеров в области авангардной моды, Vetements смешивает элементы субкультур и делает акцент на
+                        слияние стилей в готическом контексте.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-dark hover-opacity">
+                    <h3 class="text-xl font-semibold">Maison Margiela</h3>
+                    <p>Maison Margiela продолжает придерживаться философии разрушенной эстетики, сочетая классические формы с
+                        деконструктивизмом и загадочными элементами.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Стиль -->
+    <section id="styles" class="py-16 bg-gray-900 text-center fade-in">
+        <div class="max-w-7xl mx-auto w-full">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-red-600 mb-8">Стиль готической моды 2024</h2>
+            <p class="text-lg mb-8 text-muted">В 2024 году готический стиль продолжает развиваться и обогащаться новыми идеями.
+                Вот несколько ключевых аспектов:</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
+                <div class="bg-gray-800 p-6 rounded-lg shadow-dark hover-scale">
+                    <h3 class="text-xl font-semibold mb-2">Скульптурные силуэты</h3>
+                    <p>Использование выразительных, театральных форм, которые делают акцент на фигуре, но при этом скрывают
+                        или трансформируют её контуры.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-dark hover-scale">
+                    <h3 class="text-xl font-semibold mb-2">Натуральные материалы</h3>
+                    <p>В 2024 году готическая мода сделает акцент на экологичность и использование натуральных материалов,
+                        таких как кожа, бархат, шерсть и шелк.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-dark hover-scale">
+                    <h3 class="text-xl font-semibold mb-2">Металлические акценты</h3>
+                    <p>Металлические детали, такие как цепи, пряжки и застежки, продолжают быть важным элементом в готическом
+                        стиле.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О нас -->
+    <section id="about" class="bg-black py-16 text-center fade-in">
+        <div class="max-w-7xl mx-auto w-full">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-red-600 mb-8">О нас</h2>
+            <p class="text-lg mb-8 text-muted">Мы — команда, стремящаяся делиться самыми актуальными новостями в мире готической
+                моды. Мы исследуем и отслеживаем тренды, чтобы предоставить нашим читателям самые интересные материалы.</p>
+            <a href="mailto:contact@darkfashion2024.com" class="btn-dark px-8 py-4 rounded-full text-lg font-bold hover:bg-red-800 transition">Связаться с
+                нами</a>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="bg-gray-900 text-white py-6 text-center">
+        <p>&copy; 2024 Готическая Мода 2024. Все права защищены.</p>
+    </footer>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт</title>
+    <style>
+        /* Стили для навигации */
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Контент страницы -->
+    <h1>Добро пожаловать на мой сайт!</h1>
+    <p>Здесь будет ваш основной контент.</p>
+
+</body>
+</html>
